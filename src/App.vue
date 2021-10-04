@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <slider-header/>
+    <catalog/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import Catalog from "./components/catalog";
+import SliderHeader from "./components/slider-header";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SliderHeader,
+    Catalog,
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+
+:root {
+  --font-color: #444444;
+  --circle-background-color: #f6f6f6;
+  --border-color: #eeeeee;
+  --primary-color: #00adef;
 }
+
+#app {
+
+  margin: 26px 0 25px 0;
+
+}
+
+
+
+
 </style>
